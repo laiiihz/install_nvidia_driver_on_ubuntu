@@ -1,4 +1,4 @@
-# install_nvidia_driver_on_ubuntu_18_10
+# install_nvidia_driver_on_ubuntu_18_XX
 
 ## 禁用Nouveau开源驱动
 在终端中
@@ -47,3 +47,8 @@ sudo vim /etc/modprobe.d/nvidia-blacklists-nouveau.conf
 ```bash
 sudo update-initramfs -u
 ```
+
+## 可用主机列表
+|factory |device |model|status |
+|--------|-------|-----|-------|
+|HP|Pavilion15|bc011tx|work|
