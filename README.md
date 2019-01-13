@@ -26,10 +26,24 @@ sudo apt autoremove --purge nvidia*
 sudo service gdm stop
 ```
 ### 安装驱动
+
+安装必要软件包
+```bash
+sudo apt install gcc make
+```
 ctrl+alt+f3进入虚拟控制台，登陆后
 ```bash
 sudo ./NVIDIA-Linux-x86_64-XXX.XX.run
 sudo apt install nvidia-prime nvidia-settings
 reboot
 ```
-### 
+## Extra
+### 解决画面撕裂
+```bash
+sudo vim /etc/modprobe.d/nvidia-blacklists-nouveau.conf
+```
+添加`options nvidia_drm modeset=1`
+
+```bash
+sudo update-initramfs -u
+```
