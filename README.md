@@ -49,6 +49,6 @@ sudo update-initramfs -u
 ```
 
 ## 可用主机列表
-|factory |device |model|status |
-|--------|-------|-----|-------|
-|HP|Pavilion15|bc011tx|work|
+|factory |device |model|system|status |
+|--------|-------|-----|------|-------|
+|HP|Pavilion15|bc011tx|ubuntu1810|work|
