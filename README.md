@@ -1,0 +1,1 @@
+# install_nvidia_driver_on_ubuntu_18_10
