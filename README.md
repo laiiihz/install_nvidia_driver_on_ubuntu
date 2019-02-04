@@ -52,3 +52,4 @@ sudo update-initramfs -u
 |factory |device |model|system|status |
 |--------|-------|-----|------|-------|
 |HP|Pavilion15|bc011tx|ubuntu1810|work|
+|HP|Pavilion15|bc011tx|ubuntu1804|work|
