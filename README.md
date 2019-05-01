@@ -1,4 +1,4 @@
-# install_nvidia_driver_on_ubuntu_18_XX
+# install_nvidia_driver_on_ubuntu
 
 ## 禁用Nouveau开源驱动
 在终端中
@@ -42,6 +42,10 @@ reboot
 ```bash
 sudo vim /etc/modprobe.d/nvidia-blacklists-nouveau.conf
 ```
+或者
+```bash
+sudo vim /etc/modprobe.d/blacklist.conf
+```
 添加`options nvidia_drm modeset=1`
 
 ```bash
@@ -51,5 +55,6 @@ sudo update-initramfs -u
 ## 可用主机列表
 |factory |device |model|system|status |
 |--------|-------|-----|------|-------|
+|HP|Pavilion15|bc011tx|ubuntu1904|work|
 |HP|Pavilion15|bc011tx|ubuntu1810|work|
 |HP|Pavilion15|bc011tx|ubuntu1804|work|
